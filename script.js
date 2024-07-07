@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Hide the message after a few seconds
             setTimeout(() => {
                 messageDiv.classList.remove('show');
-            }, 2000);
+            }, 4000);
         });
     });
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Click event listener for the WhatsApp button
     whatsappButton.addEventListener('click', () => {
         // Replace with the actual URL you want to share
-        const shareUrl = 'https://your-site-name.netlify.app';
+        const shareUrl = 'https://iloveyouubaby.netlify.app/';
 
         // Use the WhatsApp API to share the URL
         window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(shareUrl)}`);
