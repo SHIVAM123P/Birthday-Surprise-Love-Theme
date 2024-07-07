@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
             messageText.textContent = message;
             messageDiv.style.backgroundImage = `url(${iconSrc})`;
 
+            messageDiv.style.background = getRandomGradient();
+
+            messageDiv.classList.add('show');
+
             // Play a sound effect
             playSoundEffect('sound-effect.mp3'); // Replace 'sound-effect.mp3' with your sound file path
 
@@ -58,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to play a sound effect
     function playSoundEffect(soundUrl) {
         const sound = new Audio(soundUrl);
-        sound.volume = 0.5; // Adjust volume if needed
+        sound.volume = 0.7; // Adjust volume if needed
         sound.play();
     }
 
