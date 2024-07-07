@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiest Birthday Jaan!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <button id="startButton">Click Here baby!</button>
+        <h1></h1>
+        <p>Love Notes Below..</p>
+        <div class="elements">
+            <div class="element" id="heart" data-message="You are my heart, baby." data-icon="heart.png"></div>
+            <div class="element" id="flower" data-message="Our love blossoms every day, Sweetheart." data-icon="rose.png"></div>
+            <div class="element" id="star" data-message="You are my shining star, Puchu." data-icon="star.jpg"></div>
+            <div class="element" id="moon" data-message="You light up my nights, Darling." data-icon="moon.png"></div>
+            <div class="element" id="sun" data-message="You brighten my days, Cutie." data-icon="sun.jpg"></div>
+        </div>
+        <div class="message" id="message">
+            <div class="message-content">
+                <p id="message-text"></p>
+            </div>
+        </div>
+        <audio id="background-music" src="romantic_song.mp3" loop></audio> <!-- Add your romantic song here -->
+        <button id="whatsappButton">Share on WhatsApp</button>
+
+    </div>
+    <canvas id="animationCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
